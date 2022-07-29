@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>myToDoList</title>
+        <title>myDoList</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css"/>
-		<script src="script.js"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+		<script type="text/javascript" src="script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <h1>myToDoList</h1>
-        </div>
+        <header>
+            <h1 class="title">myToDoList</h1>
+            <input id="to-do-input" type="text" placeholder="Enter todo">
+            <hr>
+            <button id="add-to-do-btn" onclick="addToDo()">Add todo</button>
+            <button id="clear-btn" onclick="clearList()">Clear</button>
+        </header>
+        <main>
+            <div id="to-do-list-container"></div>
+        </main>
     </body>
 </html>
